@@ -1,0 +1,66 @@
+<html>
+<head>
+
+<link rel="stylesheet" href="{{url_for('static', filename='main.css')}}" crossorigin="anonymous"/>
+<link rel="stylesheet" href="{{url_for('static', filename='jquery.switchButton.css')}}" crossorigin="anonymous"/>
+<style>
+.switch-wrapper{
+display: inline-block;
+position: relative;
+top: 3px;
+</style>
+
+<body>
+<h1>LED Controller</h1>
+
+<span class="led" id="blue">
+Blue LED:	<input type="checkbox" value="off"/>
+</span>
+<span class="led" id="red">
+Red LED:        <input type="checkbox" value="off"/>
+</span>
+<span class="led" id="green">
+Green LED:      <input type="checkbox" value="off"/>
+</span>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.2/jquery-ui.min.js"></script>
+<script type="text/javascript" src="{{url_for('static', filename='jquery.switchButton.js')}}"></script>
+<script>
+      $(function() {
+        $('#blue.led input').switchButton({
+	    width: 100,
+	    height: 40,
+	    button_width: 70,
+	    on_callback: function(){
+		$.get('blue/on', function(){});
+	    },
+	    off_callback: function(){
+		$.get('blue/off', function(){});
+	    }
+	});
+	$('#red.led input').switchButton({
+	    width: 100,
+	    height: 40,
+	    button_width: 70,
+	    on_callback: function(){
+		$.get('red/on', function(){});
+	    },
+	    off_callback: function(){
+		$.get('red/off', function(){});
+	    }
+	});
+	$('#green.led input').switchButton({
+	    width: 100,
+	    height: 40,
+	    button_width: 70,
+	    on_callback: function(){
+		$.get('green/on', function(){});
+	    },
+	    off_callback: function(){
+		$.get('green/off', function(){});
+	    }
+	});
+});
+</script>
+</body>
+</html>
