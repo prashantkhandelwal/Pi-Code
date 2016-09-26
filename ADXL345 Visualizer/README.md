@@ -2,7 +2,7 @@
 
 ##Screenshots
 
-![](http://)
+![ADXL Viz](https://github.com/prashantkhandelwal/Pi-Code/raw/master/ADXL345%20Visualizer/screenshots/adxlViz.png)
 
 ##Dependencies
 ##### Raspberry PI
@@ -13,6 +13,6 @@
 
 
 - - -
-You can refer to [this blog post](http://midnigihtprogrammer.net/) for more information
+You can refer to [this blog post](http://midnightprogrammer.net/post/Visualizing-ADXL345-Accelerometer-Output-In-Windows-Forms-From-Raspberry-PI-2/) for more information
 
 
