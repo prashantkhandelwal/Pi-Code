@@ -1,0 +1,12 @@
+C:\Users\Windows\Desktop\ADXLVisualizer\ADXLVisualizer\bin\Debug\ADXLVisualizer.exe.config
+C:\Users\Windows\Desktop\ADXLVisualizer\ADXLVisualizer\bin\Debug\ADXLVisualizer.exe
+C:\Users\Windows\Desktop\ADXLVisualizer\ADXLVisualizer\bin\Debug\ADXLVisualizer.pdb
+C:\Users\Windows\Desktop\ADXLVisualizer\ADXLVisualizer\bin\Debug\LiveCharts.dll
+C:\Users\Windows\Desktop\ADXLVisualizer\ADXLVisualizer\bin\Debug\LiveCharts.WinForms.dll
+C:\Users\Windows\Desktop\ADXLVisualizer\ADXLVisualizer\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\Windows\Desktop\ADXLVisualizer\ADXLVisualizer\obj\Debug\ADXLVisualizer.csprojResolveAssemblyReference.cache
+C:\Users\Windows\Desktop\ADXLVisualizer\ADXLVisualizer\obj\Debug\ADXLVisualizer.Properties.Resources.resources
+C:\Users\Windows\Desktop\ADXLVisualizer\ADXLVisualizer\obj\Debug\ADXLVisualizer.csproj.GenerateResource.Cache
+C:\Users\Windows\Desktop\ADXLVisualizer\ADXLVisualizer\obj\Debug\ADXLVisualizer.exe
+C:\Users\Windows\Desktop\ADXLVisualizer\ADXLVisualizer\obj\Debug\ADXLVisualizer.pdb
+C:\Users\Windows\Desktop\ADXLVisualizer\ADXLVisualizer\obj\Debug\ADXLVisualizer.MainForm.resources
