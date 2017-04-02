@@ -1,0 +1,62 @@
+﻿@{
+    ViewBag.Title = "Home Page";
+}
+
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+<div id="chart_div"></div>
+
+<script>
+
+    var data = [];
+    var chart;
+
+    google.charts.load('current', { packages: ['corechart', 'line'] });
+    google.charts.setOnLoadCallback(loadChart);
+
+    var hub = $.connection.ioTHub;
+    $.connection.hub.start();
+
+    hub.client.iotHubNotification = function (d) {
+        console.log(d);
+        var pi = JSON.parse(d);
+        var time = pi.date.split(',');
+        var temp = pi.temp;
+        var humid = pi.humid;
+
+        data.addRows([[[parseInt(time[0]), parseInt(time[1]), parseInt(time[2])], temp, humid]]);
+
+        var options = {
+            height: 250,
+            hAxis: {
+                title: 'Time'
+            },
+            vAxis: {
+                title: 'Temperature / Humidity',
+                gridlines: { count: 22 } 
+            }
+        };
+
+        chart.draw(data, options);
+    };
+
+    function loadChart() {
+        data = new google.visualization.DataTable();
+        data.addColumn('timeofday', 'Time');
+        data.addColumn('number', 'Temperature');
+        data.addColumn('number', 'Humidity');
+
+        var options = {
+            height: 250,
+            hAxis: {
+                title: 'Time'
+            },
+            vAxis: {
+                title: 'Temperarture / Humidity',
+                gridlines: { count: 22 } 
+            }
+        };
+
+        chart = new google.visualization.LineChart(document.getElementById('chart_div'));
+        chart.draw(data, options);
+    }
+</script>
